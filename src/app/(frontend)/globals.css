@@ -98,6 +98,15 @@
   }
 }
 
+.prose h2 {
+  font-size: 2.5rem;
+}
+
+.prose p {
+  font-size: 1.125rem;
+  color: white;
+}
+
 :root {
   --white: #d9d9d9;
   --purple: #908dff;
@@ -170,3 +179,19 @@ html[data-theme='light'] {
 .purple-secondary-button:active {
   background-color: #43464d;
 }
+
+.purple-card {
+  border: 1px solid var(--purple);
+  background-color: var(--light-purple);
+  /* border-radius: 30px; */
+  /* padding: 35px; */
+}
+
+.purple-card-text {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#fff, #908dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 153%;
+}
+

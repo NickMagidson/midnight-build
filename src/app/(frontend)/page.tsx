@@ -73,7 +73,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
         <CollectionArchive posts={posts} />
         
         <div className="text-center mt-12">
-          <Button asChild size="lg">
+          <Button asChild variant={"purplePrimary"} size="lg">
             <Link href="/posts">View All Posts</Link>
           </Button>
         </div>
@@ -108,7 +108,7 @@ export default async function HomePage() {
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Midnight Build - Full-Stack Developer',
-    description: 'Building powerful web applications with modern technologies. Specialized in full-stack development and innovative solutions.',
+    title: 'Midnight Build - Web Development Blog',
+    description: 'Thoughts, tutorials, and insights about web development, technology trends, and software engineering best practices.',
   };
 }
