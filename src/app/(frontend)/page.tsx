@@ -56,14 +56,19 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
   return (
     <section className="py-16 lg:py-24">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+        <motion.div 
+          className="text-left mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <h2 className="heading-gradient text-3xl md:text-5xl font-bold mb-4 sm:text-7xl lg:text-6xl">
             Recent Posts
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
             Thoughts, tutorials, and insights about web development, technology trends, and software engineering best practices.
           </p>
-        </div>
+        </motion.div>
         
         <CollectionArchive posts={posts} />
         
