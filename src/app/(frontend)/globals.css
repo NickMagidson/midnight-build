@@ -98,6 +98,15 @@
   }
 }
 
+.prose {
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.5;
+}
+
+.prose h1 {
+  font-size: 3rem;
+}
+
 .prose h2 {
   font-size: 2.5rem;
 }
@@ -125,12 +134,35 @@
   content: none;
 }
 
+/* For code blocks */
+.prose pre {
+background-color: #0d1117 ;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--font-jetbrains-mono), 'Fira Code', 'Courier New', Consolas, Monaco, monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.prose pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  font-weight: normal;
+}
+
+
 /* List styling */
 .prose ul,
 .prose ol {
   margin: 1rem 0;
   padding-left: 2rem;
   color: white;
+  font-size: 1.125rem;
 }
 
 .prose ul {
