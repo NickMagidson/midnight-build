@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         >
-          Building powerful web applications with modern technologies. Specialized in full-stack development and innovative solutions.
+          Thoughts, tutorials, and insights about web development, technology trends, and software engineering best practices.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
         >
           <Button asChild variant={"purplePrimary"} size="lg" >
-            <Link href="/posts">View My Work</Link>
+            <Link href="/posts">View Posts</Link>
           </Button>
           <Button asChild variant={"purpleSecondary"} size="lg" >
             <Link href="/contact">Get In Touch</Link>
@@ -66,7 +66,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
             Recent Posts
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-            Thoughts, tutorials, and insights about web development, technology trends, and software engineering best practices.
+            Here are some of the latest articles, tutorials, and project rundowns. From web developement tips to industry insights.
           </p>
         </motion.div>
         

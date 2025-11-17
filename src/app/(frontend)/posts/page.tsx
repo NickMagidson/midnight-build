@@ -4,8 +4,8 @@ import { CollectionArchive } from '@/components/CollectionArchive'
 import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
 import configPromise from '@payload-config'
+import * as motion from 'motion/react-client'
 import { getPayload } from 'payload'
-import React from 'react'
 import PageClient from './page.client'
 
 export const dynamic = 'force-static'
@@ -31,9 +31,16 @@ export default async function Page() {
     <div className="pt-24 pb-24">
       <PageClient />
       <div className="container mb-16">
-        <div className="prose dark:prose-invert max-w-none">
-          <h1>Posts</h1>
-        </div>
+        {/* <div className="prose dark:prose-invert max-w-none"> */}
+        <motion.h1
+          className="heading-gradient text-5xl leading-tight font-semibold mb-4 sm:text-7xl lg:text-8xl lg:leading-tight"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          Blog Posts
+        </motion.h1>
+        {/* </div> */}
       </div>
 
       <div className="container mb-8">
@@ -58,6 +65,6 @@ export default async function Page() {
 
 export function generateMetadata(): Metadata {
   return {
-    title: `Payload Website Template Posts`,
+    title: `Midnight Build Posts`,
   }
 }

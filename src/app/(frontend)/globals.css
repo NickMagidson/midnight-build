@@ -11,6 +11,7 @@
   h6 {
     font-size: unset;
     font-weight: unset;
+    font-family: var(--font-inter), sans-serif;
   }
 
   :root {
@@ -95,6 +96,9 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+  p {
+    font-family: var(--font-inter), sans-serif;
   }
 }
 
