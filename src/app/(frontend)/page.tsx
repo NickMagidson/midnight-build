@@ -70,13 +70,24 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
           </p>
         </motion.div>
         
-        <CollectionArchive posts={posts} />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+        >
+          <CollectionArchive posts={posts} />
+        </motion.div>
         
-        <div className="text-center mt-12">
+        <motion.div 
+          className="text-center mt-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+        >
           <Button asChild variant={"purplePrimary"} size="lg">
             <Link href="/posts">View All Posts</Link>
           </Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

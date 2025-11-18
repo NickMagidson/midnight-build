@@ -302,3 +302,19 @@ html[data-theme='light'] {
   line-height: 153%;
 }
 
+.container .max-w-\[48rem\] {
+  @apply mx-auto;
+}
+
+/* Hero h1 styling - automatically applies gradient and responsive sizing */
+.container .max-w-\[48rem\] h1 {
+  @apply heading-gradient text-5xl md:text-7xl font-bold mb-8;
+}
+
+/* Center aligned headings in hero sections */
+.container .max-w-\[48rem\] h1[style*="text-align: center"],
+.container .max-w-\[48rem\] h1[class*="text-center"] {
+  @apply text-center;
+}
+
+

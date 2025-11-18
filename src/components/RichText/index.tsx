@@ -1,25 +1,25 @@
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
 import {
-  DefaultNodeTypes,
-  SerializedBlockNode,
-  SerializedLinkNode,
-  type DefaultTypedEditorState,
+    DefaultNodeTypes,
+    SerializedBlockNode,
+    SerializedLinkNode,
+    type DefaultTypedEditorState,
 } from '@payloadcms/richtext-lexical'
 import {
-  JSXConvertersFunction,
-  LinkJSXConverter,
-  RichText as ConvertRichText,
+    RichText as ConvertRichText,
+    JSXConvertersFunction,
+    LinkJSXConverter,
 } from '@payloadcms/richtext-lexical/react'
 
 import { CodeBlock, CodeBlockProps } from '@/blocks/Code/Component'
 
-import type {
-  BannerBlock as BannerBlockProps,
-  CallToActionBlock as CTABlockProps,
-  MediaBlock as MediaBlockProps,
-} from '@/payload-types'
 import { BannerBlock } from '@/blocks/Banner/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
+import type {
+    BannerBlock as BannerBlockProps,
+    CallToActionBlock as CTABlockProps,
+    MediaBlock as MediaBlockProps,
+} from '@/payload-types'
 import { cn } from '@/utilities/ui'
 
 type NodeTypes =

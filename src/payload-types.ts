@@ -158,6 +158,10 @@ export interface Page {
   title: string;
   hero: {
     type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
+    /**
+     * Add custom Tailwind or CSS classes (e.g., "heading-gradient text-5xl md:text-7xl")
+     */
+    customClasses?: string | null;
     richText?: {
       root: {
         type: string;
@@ -1060,6 +1064,7 @@ export interface PagesSelect<T extends boolean = true> {
     | T
     | {
         type?: T;
+        customClasses?: T;
         richText?: T;
         links?:
           | T
