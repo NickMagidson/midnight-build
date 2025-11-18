@@ -1,6 +1,7 @@
 import type { Field } from 'payload'
 
 import {
+  AlignFeature,
   FixedToolbarFeature,
   HeadingFeature,
   InlineToolbarFeature,
@@ -16,7 +17,7 @@ export const hero: Field = {
     {
       name: 'type',
       type: 'select',
-      defaultValue: 'lowImpact',
+      defaultValue: 'mediumImpact',
       label: 'Type',
       options: [
         {
@@ -39,6 +40,15 @@ export const hero: Field = {
       required: true,
     },
     {
+      name: 'customClasses',
+      type: 'text',
+      label: 'Custom CSS Classes',
+      admin: {
+        description: 'Add custom Tailwind or CSS classes (e.g., "heading-gradient text-5xl md:text-7xl")',
+        placeholder: 'heading-gradient text-center',
+      },
+    },
+    {
       name: 'richText',
       type: 'richText',
       editor: lexicalEditor({
@@ -46,6 +56,7 @@ export const hero: Field = {
           return [
             ...rootFeatures,
             HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
+            AlignFeature(),
             FixedToolbarFeature(),
             InlineToolbarFeature(),
           ]
