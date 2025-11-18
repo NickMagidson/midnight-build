@@ -239,6 +239,7 @@ html[data-theme='light'] {
   -webkit-background-clip: text;
   background-clip: text;
   position: relative;
+  line-height: 1.2;
 }
 
 
