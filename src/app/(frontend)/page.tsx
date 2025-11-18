@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { getPayload } from 'payload';
 import React from 'react';
 
+// Test comment for deployment
+
 const Hero: React.FC = () => {
   return (
     <div className="min-h-[80vh] flex-col flex items-center justify-center">
