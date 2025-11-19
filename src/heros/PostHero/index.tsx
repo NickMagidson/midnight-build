@@ -39,7 +39,7 @@ export const PostHero: React.FC<{
           </div>
 
           <div className="">
-            <h1 className="heading-gradient mb-6 text-3xl leading-snug md:text-5xl lg:text-6xl">{title}</h1>
+            <h1 className="heading-gradient mb-6 text-3xl leading-snug md:text-5xl lg:text-6xl lg:leading-snug">{title}</h1>
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 md:gap-16">
